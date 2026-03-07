@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --green-primary: #00b35f;
+    /* Darkened slightly for light background readability */
+    --green-primary-rgb: 0, 179, 95;
+
+    --blue-primary: #0066cc;
+    --blue-primary-rgb: 0, 102, 204;
+
+    /* We keep these for the footer and dark elements */
+    --dark-bg: #0a0f1e;
+    --navy: #1a2332;
+
+    /* Light Theme Variables */
+    --bg-main: #ffffff;
+    --bg-alt: #f8fafc;
+
+    --text-main: #0f172a;
+    --text-muted: #475569;
+
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body.theme-light {
+    font-family: var(--font-sans);
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}

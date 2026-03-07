@@ -1,0 +1,229 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: var(--font-sans);
+    letter-spacing: -0.02em;
+}
+
+/* Utilities */
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.bg-dark {
+    background-color: var(--dark-bg) !important;
+}
+
+.bg-navy {
+    background-color: var(--navy) !important;
+}
+
+.bg-light-alt {
+    background-color: var(--bg-alt) !important;
+}
+
+.text-dark-bg {
+    color: var(--dark-bg);
+}
+
+.text-green {
+    color: var(--green-primary) !important;
+}
+
+.text-blue {
+    color: var(--blue-primary) !important;
+}
+
+.text-muted-dark {
+    color: var(--text-muted) !important;
+}
+
+.dash-line {
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.bg-green {
+    background-color: var(--green-primary);
+}
+
+.bg-blue {
+    background-color: var(--blue-primary);
+}
+
+.badge-glow {
+  background: rgba(0, 179, 95, .1);
+  color: #00b35f;
+  border: 1px solid rgba(0, 179, 95, .3);
+}
+
+/* Typography Enhancements */
+.text-gradient {
+    background: linear-gradient(135deg, var(--green-primary) 0%, var(--blue-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Abstract Tech Decorations */
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.15;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--blue-primary);
+    top: -100px;
+    right: -100px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--green-primary);
+    bottom: -50px;
+    left: 20%;
+}
+
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Icon Boxes */
+.icon-box-primary {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+    background: rgba(0, 179, 95, 0.1);
+    color: var(--green-primary);
+    border: 1px solid rgba(0, 179, 95, 0.2);
+}
+
+.icon-box-blue {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+    background: rgba(0, 102, 204, 0.1);
+    color: var(--blue-primary);
+    border: 1px solid rgba(0, 102, 204, 0.2);
+}
+
+.shadow-green {
+    box-shadow: 0 4px 15px rgba(0, 179, 95, 0.2);
+}
+
+.shadow-blue {
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+}
+
+/* Glass Cards & Effects */
+.glass-card {
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.border-effect {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.section-offset {
+    scroll-margin-top: 80px;
+}
+
+/* Capability Cards */
+.capability-card {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.capability-card:hover {
+    transform: translateY(-8px);
+    background: #fff !important;
+    border-color: rgba(0, 102, 204, 0.3) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.capability-card .display-icon {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.capability-card:hover .display-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Custom styles specific to the Product page */
+
+.product-hero-section {
+    min-height: 80vh;
+    padding-top:100px;
+    position:relative;
+    overflow:hidden;
+    background:url('/hero_bg.png') center/cover no-repeat fixed;
+}
+
+.product-hero-section .hero-bg-overlay {
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(248,250,252,.8));
+}
+
+.tech-spec-card {
+    transition: all 0.3s ease;
+}
+
+.tech-spec-card:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-4px);
+}
+
+.feature-hover {
+    transition: all 0.3s ease;
+}
+
+.feature-hover:hover {
+    border-color: rgba(0, 179, 95, 0.3) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 991.98px) {
+    .product-hero-section {
+        padding-top: 100px;
+        padding-bottom: 2rem;
+    }
+}

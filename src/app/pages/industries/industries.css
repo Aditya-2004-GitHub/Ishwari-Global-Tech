@@ -1,0 +1,207 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.text-xs {
+  font-size: .75rem;
+}
+
+/* Colors */
+.text-dark-bg {
+  color: #0a0f1e;
+}
+
+.text-muted-dark {
+  color: #64748b;
+}
+
+.text-green {
+  color: #00b35f;
+}
+
+.text-blue {
+  color: #0066cc;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-light-alt {
+  background: #f8fafc;
+}
+
+.bg-navy {
+  background: #0a0f1e;
+}
+
+.bg-green {
+  background: #00b35f;
+}
+
+.bg-blue {
+  background: #0066cc;
+}
+
+/* Small divider line */
+.dash-line {
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.btn-brand-primary {
+  background: #00b35f;
+  border-color: #00b35f;
+  color: #fff;
+}
+
+.btn-brand-primary:hover {
+  background: #009952;
+  transform: translateY(-2px);
+}
+
+.btn-glow {
+  box-shadow: 0 4px 15px rgba(0, 179, 95, .4);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #00b35f, #0066cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Badge */
+.badge-glow {
+  background: rgba(0, 179, 95, .1);
+  color: #00b35f;
+  border: 1px solid rgba(0, 179, 95, .3);
+}
+
+/* Section spacing */
+.section-offset {
+  scroll-margin-top: 80px;
+}
+
+/* Decorative shapes */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: .15;
+}
+
+.shape-1 {
+  width: 400px;
+  height: 400px;
+  background: #0066cc;
+  top: -100px;
+  right: -100px;
+}
+
+.shape-2 {
+  width: 300px;
+  height: 300px;
+  background: #00b35f;
+  bottom: -50px;
+  left: 20%;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, .03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Image border */
+.border-effect {
+  border: 1px solid rgba(0, 0, 0, .05);
+}
+
+/* Glass cards */
+.glass-card {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+}
+
+/* Tech list hover */
+.tech-list li {
+  transition: .3s;
+}
+
+.tech-list li:hover {
+  transform: translateX(10px);
+}
+
+/* Responsive */
+@media (max-width:991px) {
+
+  .about-hero-section {
+    padding-top: 100px;
+    padding-bottom: 2rem;
+  }
+
+}
+
+/* Custom styles specific to the Industries page */
+
+.industry-hero-section {
+  min-height: 80vh;
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background: url('/hero_bg.png') center/cover no-repeat fixed;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .95), rgba(248, 250, 252, .8));
+}
+
+.industry-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.industry-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(0, 102, 204, 0.2) !important;
+}
+
+.feature-item {
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  background: #fff !important;
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+@media (max-width: 991.98px) {
+  .industry-hero-section {
+    padding-top: 100px;
+    padding-bottom: 2rem;
+  }
+}

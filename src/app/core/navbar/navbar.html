@@ -1,0 +1,54 @@
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top transition-all">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/">
+      <img src="logo.png" alt="Ishwari Global Tech Logo" class="brand-logo">
+      <span class="brand-text text-dark-bg">Ishwari Global Tech</span>
+    </a>
+
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarContent">
+
+      <i class="bi bi-list text-blue"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+
+        <li class="nav-item">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-link"
+            (click)="closeMenu()">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="closeMenu()">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/products" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/industries" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Clients</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/certifications" routerLinkActive="active" class="nav-link"
+            (click)="closeMenu()">Certifications</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Contact Us</a>
+        </li>
+
+      </ul>
+
+      <a routerLink="contact" fragment="contactQuote"
+        class="btn btn-brand-primary ms-lg-3 px-4 py-2 fw-semibold btn-glow">
+        Get a Quote
+      </a>
+
+    </div>
+  </div>
+</nav>
