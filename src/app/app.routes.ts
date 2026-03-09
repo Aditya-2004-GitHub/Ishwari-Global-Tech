@@ -6,6 +6,7 @@ import { About } from './pages/about/about';
 import { Certifications } from './pages/certifications/certifications';
 import { Products } from './pages/products/products';
 import { Contact } from './pages/contact/contact';
+import { PageNotFound } from './pages/page-not-found/page-not-found';
 
 export const routes: Routes = [
   { path: '', component: Home, title: 'Home' },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'products', component: Products, title: 'Products' },
   { path: 'industries', component: Industries, title: 'Industries' },
   { path: 'certifications', component: Certifications, title: 'Certifications' },
-  { path: 'contact', component: Contact, title: 'Contact' }
+  { path: 'contact', component: Contact, title: 'Contact' },
+  { path: '**', component: PageNotFound, title: 'Page Not Found', data: { hideLayout: true } }
 ];

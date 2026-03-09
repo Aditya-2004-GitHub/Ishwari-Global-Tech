@@ -1,8 +1,9 @@
 import { AfterViewInit, Component, ElementRef, HostListener } from '@angular/core';
+import { RouterLink, RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [RouterLink, RouterModule],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
