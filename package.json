@@ -20,6 +20,16 @@
       }
     ]
   },
+  "production": {
+    "budgets": [
+      {
+        "type": "initial",
+        "maximumWarning": "1mb",
+        "maximumError": "2mb"
+      }
+    ],
+    "outputHashing": "all"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "^20.3.0",

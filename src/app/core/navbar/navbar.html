@@ -25,21 +25,40 @@
           <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="closeMenu()">About</a>
         </li>
 
-        <li class="nav-item">
-          <a routerLink="/products" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Products</a>
+        <li class="nav-item dropdown custom-dropdown-container">
+          <a class="nav-link d-flex align-items-center gap-1 dropdown-toggle-custom" href="#" id="productsDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+            <i class="bi bi-chevron-down text-xs transition-all dropdown-icon"></i>
+          </a>
+
+          <ul class="dropdown-menu custom-dropdown-menu border-0" aria-labelledby="productsDropdown">
+            <li>
+              <a routerLink="/products" class="dropdown-item" (click)="closeMenu()">Our Products</a>
+            </li>
+            <li>
+              <a routerLink="/under-construction" class="dropdown-item" (click)="closeMenu()">PCBs</a>
+            </li>
+            <li>
+              <a routerLink="/under-construction" class="dropdown-item" (click)="closeMenu()">LED Lights</a>
+            </li>
+            <li>
+              <a routerLink="/under-construction" class="dropdown-item" (click)="closeMenu()">Solar PV Modules</a>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item">
-          <a routerLink="/industries" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Clients</a>
+          <a routerLink="/industries" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Applications</a>
         </li>
 
         <li class="nav-item">
-          <a routerLink="/certifications" routerLinkActive="active" class="nav-link"
-            (click)="closeMenu()">Certifications</a>
+          <a routerLink="/certifications" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Quality
+            Assurance</a>
         </li>
 
         <li class="nav-item">
-          <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Contact Us</a>
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Contact</a>
         </li>
 
       </ul>
